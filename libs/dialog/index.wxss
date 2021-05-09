@@ -1,0 +1,32 @@
+.dialog-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(0, 0, 0, .6);
+    transition: all .3s ease-in-out
+}
+
+.dialog-mask.show {
+    opacity: 1;
+    visibility: visible
+}
+
+.dialog-content {
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    transform-origin: center;
+    visibility: hidden;
+    position: fixed;
+    transition: all .3s ease-in-out;
+    opacity: 0
+}
+
+.dialog-content.show {
+    opacity: 1;
+    visibility: visible
+}

@@ -1,0 +1,15 @@
+<view class="container">
+    <button bind:tap="onTapShow1">show dialog 1</button>
+    <button bind:tap="onTapShow2">show dialog 2</button>
+    <dialog ui-class="dialog-1" visible="{{showDialog1}}">
+        <view class="dialog-custom">
+            <text>this is dialog content</text>
+            <button type="primary" bind:tap="handleHide1">hide dialog</button>
+        </view>
+    </dialog>
+    <dialog ui-class="dialog-2" visible="{{showDialog2}}" bindtapMask="handleHide2">
+        <view class="dialog-custom">
+            <text>tap mask to close this dialog</text>
+        </view>
+    </dialog>
+</view>

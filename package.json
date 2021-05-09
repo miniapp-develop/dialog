@@ -1,0 +1,24 @@
+{
+  "name": "@mini-dev/dialog",
+  "version": "0.0.1",
+  "description": "miniapp ui/dialog",
+  "miniprogram": "dist",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:miniapp-develop/dialog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miniapp-develop/dialog"
+  },
+  "homepage": "https://github.com/miniapp-develop/dialog",
+  "devDependencies": {
+  },
+  "keywords": [
+    "miniapp"
+  ],
+  "author": "xesam",
+  "license": "ISC"
+}

@@ -1,0 +1,4 @@
+<view class="dialog-mask {{visible ? 'show' : ''}}" style="z-index: {{maskZindex}};" bind:tap="onTapMask"></view>
+<view class="dialog-content {{visible ? 'show' : ''}} ui-class" style="z-index: {{dialogZindex}};">
+    <slot></slot>
+</view>
