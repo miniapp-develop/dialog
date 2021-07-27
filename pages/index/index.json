@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "dialog": "../../libs/dialog/index"
+    "alert": "/libs/alert/index"
   }
 }

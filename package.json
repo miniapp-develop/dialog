@@ -2,7 +2,6 @@
   "name": "@mini-dev/dialog",
   "version": "0.0.1",
   "description": "miniapp ui/dialog",
-  "miniprogram": "dist",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,8 +13,10 @@
     "url": "https://github.com/miniapp-develop/dialog"
   },
   "homepage": "https://github.com/miniapp-develop/dialog",
-  "devDependencies": {
+  "dependencies": {
+    "@mini-dev/modal": "0.0.2"
   },
+  "devDependencies": {},
   "keywords": [
     "miniapp"
   ],

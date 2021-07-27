@@ -10,13 +10,17 @@ _Component({
             type: Boolean,
             value: true
         },
-        maskZindex: {
+        zIndex: {
             type: Number,
-            value: 900
+            value: 10
         },
-        dialogZindex: {
-            type: Number,
-            value: 901
+        title: {
+            type: String,
+            value: ''
+        },
+        content: {
+            type: String,
+            value: ''
         }
     },
     methods: {

@@ -1,0 +1,10 @@
+<modal visible="{{visible}}"
+       z-index="{{zIndex}}"
+       mask="{{mask}}"
+       bindtapMask="onTapMask"
+       ui-class="alert">
+    <view class="alert__header"></view>
+    <view class="alert__body"></view>
+    <view class="alert__footer"></view>
+    <slot></slot>
+</modal>
