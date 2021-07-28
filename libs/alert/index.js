@@ -26,6 +26,9 @@ _Component({
     methods: {
         onTapMask(e) {
             this.triggerEvent('tapMask', {});
+        },
+        onTapConfirm(e) {
+            this.triggerEvent('confirm', {});
         }
     }
 });

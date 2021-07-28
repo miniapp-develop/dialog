@@ -1,0 +1,16 @@
+.alert {
+    top: 45%;
+    min-width: 50%;
+    max-width: 80%;
+    background: #fff;
+    border-radius: 0.4em;
+}
+
+.alert__header, .alert__footer {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.alert__body {
+    padding: 0.5em;
+}

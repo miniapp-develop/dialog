@@ -1,29 +1,19 @@
 Page({
     data: {
-        showDialog1: false,
-        showDialog2: false,
+        isShow_1: false,
+        isShow_2: false,
     },
     onLoad(query) {
 
     },
-    onTapShow1() {
+    onTapShow(e) {
         this.setData({
-            showDialog1: true
+            [`isShow_${e.currentTarget.dataset.index}`]: true
         });
     },
-    handleHide1() {
+    onTapConfirm(e) {
         this.setData({
-            showDialog1: false
-        });
-    },
-    onTapShow2() {
-        this.setData({
-            showDialog2: true
-        });
-    },
-    handleHide2() {
-        this.setData({
-            showDialog2: false
+            [`isShow_${e.currentTarget.dataset.index}`]: false
         });
     }
 });

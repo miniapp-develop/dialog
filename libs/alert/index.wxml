@@ -5,5 +5,5 @@
        ui-class="alert ui-class">
     <view class="alert__header">{{title}}</view>
     <view class="alert__body">{{content}}</view>
-    <view class="alert__footer">确定</view>
+    <view class="alert__footer" bindtap="onTapConfirm">确定</view>
 </modal>

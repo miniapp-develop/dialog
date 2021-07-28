@@ -39,7 +39,7 @@
     "showES6CompileOption": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.2.1",
+  "libVersion": "2.2.4",
   "appid": "wx132bb522ad967270",
   "projectname": "miniapp-ui-dialog",
   "debugOptions": {
