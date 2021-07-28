@@ -1,8 +1,0 @@
-.dialog-custom {
-    background: white;
-    padding: 24rpx;
-}
-
-.dialog-2 {
-    border: 5rpx solid red;
-}

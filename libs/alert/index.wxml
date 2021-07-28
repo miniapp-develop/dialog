@@ -2,9 +2,8 @@
        z-index="{{zIndex}}"
        mask="{{mask}}"
        bindtapMask="onTapMask"
-       ui-class="alert">
-    <view class="alert__header"></view>
-    <view class="alert__body"></view>
-    <view class="alert__footer"></view>
-    <slot></slot>
+       ui-class="alert ui-class">
+    <view class="alert__header">{{title}}</view>
+    <view class="alert__body">{{content}}</view>
+    <view class="alert__footer">确定</view>
 </modal>
