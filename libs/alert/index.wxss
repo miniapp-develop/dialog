@@ -6,11 +6,25 @@
     border-radius: 0.4em;
 }
 
-.alert__header, .alert__footer {
+.title {
     text-align: center;
     padding: 0.5em;
 }
 
-.alert__body {
+.content {
+    padding: 0.5em;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer__action {
+    flex: 1;
     padding: 0.5em;
 }

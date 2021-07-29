@@ -1,6 +1,7 @@
 <view class="container">
     <button bind:tap="onTapShow" data-index="1">show dialog 1</button>
     <button bind:tap="onTapShow" data-index="2">show dialog 2</button>
+    <button bind:tap="onTapShow" data-index="3">show dialog 3</button>
     <alert ui-class="dialog-1"
            visible="{{isShow_1}}"
            title="示例"
@@ -9,8 +10,14 @@
            bindconfirm="onTapConfirm"/>
     <alert ui-class="dialog-1"
            visible="{{isShow_2}}"
-           title="示例"
            content="这个对话框没有标题"
            data-index="2"
            bindconfirm="onTapConfirm"/>
+    <alert ui-class="dialog-3"
+           visible="{{isShow_3}}"
+           data-index="3"
+           bindconfirm="onTapConfirm">
+        <view slot="title">自定义标题</view>
+        <view slot="content">自定义内容</view>
+    </alert>
 </view>

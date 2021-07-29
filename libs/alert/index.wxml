@@ -3,7 +3,15 @@
        mask="{{mask}}"
        bindtapMask="onTapMask"
        ui-class="alert ui-class">
-    <view class="alert__header">{{title}}</view>
-    <view class="alert__body">{{content}}</view>
-    <view class="alert__footer" bindtap="onTapConfirm">确定</view>
+    <view class="header">
+        <view wx:if="{{title}}" class="title">{{title}}</view>
+        <slot wx:else name="title"></slot>
+    </view>
+    <view class="body">
+        <view wx:if="{{content}}" class="content">{{content}}</view>
+        <slot wx:else name="content"></slot>
+    </view>
+    <view class="footer">
+        <view class="footer__action" bindtap="onTapConfirm">确定</view>
+    </view>
 </modal>

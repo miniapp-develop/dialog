@@ -2,6 +2,7 @@ Page({
     data: {
         isShow_1: false,
         isShow_2: false,
+        isShow_3: false,
     },
     onLoad(query) {
 
