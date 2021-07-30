@@ -12,6 +12,6 @@
         <slot wx:else name="content"></slot>
     </view>
     <view class="footer">
-        <view class="footer__action footer__action footer__action--confirm" bindtap="onTapConfirm">确定</view>
+        <view class="footer__action" bindtap="onTapConfirm">确定</view>
     </view>
 </modal>
