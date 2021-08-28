@@ -1,9 +1,11 @@
 @import "../style/base.wxss";
 
-.alert {
-    top: 45%;
-    min-width: 50%;
-    max-width: 80%;
-    background: #fff;
-    border-radius: 0.4em;
+.progress__icon {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.progress__text {
+    color: #333;
+    padding: 0.5em;
 }

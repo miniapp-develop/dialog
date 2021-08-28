@@ -2,6 +2,10 @@
     <button bind:tap="onTapShow" data-index="1">show dialog 1</button>
     <button bind:tap="onTapShow" data-index="2">show dialog 2</button>
     <button bind:tap="onTapShow" data-index="3">show dialog 3</button>
+    <button bind:tap="onTapShow" data-index="4">show confirm 1</button>
+    <button bind:tap="onTapShow" data-index="5">show confirm 2</button>
+    <button bind:tap="onTapShow" data-index="6">show confirm 3</button>
+    <button bind:tap="onTapShow" data-index="7">show list 1</button>
     <alert ui-class="dialog-1"
            visible="{{isShow_1}}"
            title="示例"
@@ -17,7 +21,31 @@
            visible="{{isShow_3}}"
            data-index="3"
            bindconfirm="onTapConfirm">
-        <view slot="title">自定义标题</view>
+        <view slot="header">自定义标题</view>
         <view slot="content">自定义内容</view>
     </alert>
+    <progress ui-class="dialog-1"
+             visible="{{isShow_4}}"
+             title="示例"
+             content="这个对话框没有关闭按钮"
+             data-index="4"
+             bindconfirm="onTapConfirm"/>
+    <progress ui-class="dialog-1"
+             visible="{{isShow_5}}"
+             content="这个对话框没有标题"
+             data-index="5"
+             bindconfirm="onTapConfirm"/>
+    <progress ui-class="dialog-6"
+             visible="{{isShow_6}}"
+             data-index="6"
+             bindconfirm="onTapConfirm">
+        <view slot="title">自定义标题</view>
+        <view slot="content">自定义内容</view>
+    </progress>
+    <list-dialog ui-class="dialog-7"
+                 visible="{{isShow_7}}"
+                 title="示例"
+                 content="{{list}}"
+                 data-index="7"
+                 bindconfirm="onTapConfirm"/>
 </view>

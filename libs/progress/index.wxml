@@ -2,16 +2,12 @@
        z-index="{{zIndex}}"
        mask="{{mask}}"
        bindtapMask="onTapMask"
-       ui-class="alert ui-class">
-    <view class="header">
-        <view wx:if="{{title}}" class="title">{{title}}</view>
-        <slot wx:else name="title"></slot>
-    </view>
+       ui-class="dialog progress ui-class">
     <view class="body">
-        <view wx:if="{{content}}" class="content">{{content}}</view>
+        <view wx:if="{{content}}" class="content">
+            <image class="progress__icon" src="loading.svg"/>
+            <view class="progress__text">loading...</view>
+        </view>
         <slot wx:else name="content"></slot>
-    </view>
-    <view class="footer">
-        <view class="footer__action" bindtap="onTapConfirm">确定</view>
     </view>
 </modal>

@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "alert": "/libs/alert/index"
+    "alert": "/libs/alert/index",
+    "progress": "/libs/progress/index",
+    "list-dialog": "/libs/list/index"
   }
 }

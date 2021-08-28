@@ -2,16 +2,11 @@
        z-index="{{zIndex}}"
        mask="{{mask}}"
        bindtapMask="onTapMask"
-       ui-class="alert ui-class">
-    <view class="header">
-        <view wx:if="{{title}}" class="title">{{title}}</view>
-        <slot wx:else name="title"></slot>
-    </view>
+       ui-class="dialog alert ui-class">
+    <include src="../templates/header.wxml"/>
     <view class="body">
         <view wx:if="{{content}}" class="content">{{content}}</view>
         <slot wx:else name="content"></slot>
     </view>
-    <view class="footer">
-        <view class="footer__action footer__action footer__action--confirm" bindtap="onTapConfirm">确定</view>
-    </view>
+    <include src="../templates/footer.wxml"/>
 </modal>

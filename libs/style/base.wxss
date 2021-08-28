@@ -1,4 +1,13 @@
+.dialog{
+    top: 30%;
+    min-width: 70%;
+    max-width: 90%;
+    background: #fff;
+    border-radius: 0.4em;
+}
+
 .header {
+    padding-top: 0.5em;
 }
 
 .title {
@@ -12,6 +21,7 @@
 
 .content {
     padding: 0.5em;
+    text-align: center;
 }
 
 .footer {
@@ -22,4 +32,10 @@
 .footer__action {
     flex: 1;
     padding: 0.5em;
+    text-align: center;
+    color: black;
+}
+
+.footer__action--confirm{
+    color: cadetblue;
 }

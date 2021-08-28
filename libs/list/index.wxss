@@ -1,0 +1,10 @@
+@import "../style/base.wxss";
+
+.body--list {
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.list__item {
+    padding: 1em;
+}

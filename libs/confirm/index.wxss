@@ -1,9 +1,0 @@
-@import "../style/base.wxss";
-
-.alert {
-    top: 45%;
-    min-width: 50%;
-    max-width: 80%;
-    background: #fff;
-    border-radius: 0.4em;
-}

@@ -1,8 +1,8 @@
 Page({
     data: {
-        isShow_1: false,
-        isShow_2: false,
-        isShow_3: false,
+        list: new Array(50).fill(0).map((ele, index) => {
+            return {text: index};
+        })
     },
     onLoad(query) {
 

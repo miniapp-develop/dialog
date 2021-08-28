@@ -19,16 +19,23 @@ _Component({
             value: ''
         },
         content: {
+            type: Array,
+            value: []
+        },
+        listKey: {
             type: String,
-            value: ''
+            value: 'index'
+        },
+        actions: {
+            type: Array,
+            value: []
         }
     },
+    data: {},
+
     methods: {
-        onTapMask(e) {
-            this.triggerEvent('tapMask', {});
-        },
-        onTapConfirm(e) {
-            this.triggerEvent('confirm', {});
+        onTapListItem(e) {
+            this.triggerEvent('onTap', {value: this.data.item}, {});
         }
     }
-});
+})

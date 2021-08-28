@@ -1,0 +1,19 @@
+<modal visible="{{visible}}"
+       z-index="{{zIndex}}"
+       mask="{{mask}}"
+       bindtapMask="onTapMask"
+       ui-class="dialog list ui-class">
+    <include src="../templates/header.wxml"/>
+    <view class="body body--list">
+        <block wx:if="{{content.length}}">
+            <view class="list__item"
+                  wx:for="{{content}}"
+                  wx:key="{{listKey}}"
+                  bind:tap="onTapListItem"
+                  data-idx="{{index}}">
+                {{item.text}}
+            </view>
+        </block>
+    </view>
+    <include src="../templates/footer.wxml"/>
+</modal>
