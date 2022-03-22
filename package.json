@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/miniapp-develop/dialog",
   "dependencies": {
-    "@mini-dev/modal": "0.0.2"
+    "@mini-dev/modal": "0.0.3"
   },
   "devDependencies": {},
   "keywords": [
